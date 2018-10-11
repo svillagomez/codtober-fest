@@ -2,7 +2,7 @@
 
 # Description
 
-Hooray! you're about to begin coding in [Stack Builders code challenge](https://www.stackbuilders.com/code-challenge). In this repository you will find the challenge description and some useful templates so you save time and focus on the software architecture design.
+Hooray! You're about to begin coding in the [Stack Builders code challenge](https://www.stackbuilders.com/code-challenge). In this repository you will find the challenge description and some useful templates so you save time and focus on the software architecture design.
 
 ## How is this project going to be evaluated
 
@@ -18,7 +18,7 @@ Your ability to communicate effectively with your team members and with the exte
 **Client-oriented approach:**
 Your ability to effectively respond to the client’s needs.
 
-At the end of the code challenge, there will be a show & tell for the judges. Be prepared to *pitch* your idea to them and why yours is the best solution.
+At the end of the code challenge, there will be a show & tell for the judges. Be prepared to *pitch* your idea to them and explain why yours is the best solution.
 
 So, what are you waiting for? Are you up for the challenge?
 
