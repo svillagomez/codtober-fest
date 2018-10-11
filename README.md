@@ -37,7 +37,6 @@ The general requirements for the first version of the website are:
 
 - For the initial version of the site, the design can be simple.
 - No need to use a frontend framework, for now, you can use simple HTML forms if you wish.
-- It is preferable that you use good testing practices in your application.
 - You can use the database or persistence engine you desire (even in-memory objects or files).
 
 The initial version will have these pages:
