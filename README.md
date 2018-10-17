@@ -2,7 +2,7 @@
 
 # Description
 
-Hooray! You're about to begin coding in the [Stack Builders code challenge](https://www.stackbuilders.com/code-challenge). In this repository you will find the challenge description and some useful templates so you save time and focus on the software architecture design.
+Hooray! You're about to begin coding in the [Stack Builders code challenge](https://www.stackbuilders.com/code-challenge). In this repository you will find the challenge description and some useful templates so you can save time and focus on the software architecture design.
 
 ## How is this project going to be evaluated
 
@@ -36,7 +36,7 @@ As we grow and try to expand our business, we want to improve the services we of
 The general requirements for the first version of the website are:
 
 - For the initial version of the site, the design can be simple.
-- No need to use a frontend framework, for now, you can use simple HTML forms if you wish.
+- No need to use a frontend framework, for now. You can use simple HTML forms if you wish.
 - You can use the database or persistence engine you desire (even in-memory objects or files).
 
 The initial version will have these pages:
