@@ -37,6 +37,7 @@ The general requirements for the first version of the website are:
 
 - For the initial version of the site, the design can be simple.
 - No need to use a frontend framework, for now. You can use simple HTML forms if you wish.
+- No need to use a frontend framework, for now, you can use simple HTML forms if you wish.
 - You can use the database or persistence engine you desire (even in-memory objects or files).
 
 The initial version will have these pages:
@@ -73,6 +74,12 @@ The initial version will have these pages:
 
 1. **View orders page:** Simple list of the orders that the clients have entered. You can use this [template](templates/orders.html) for this page.
 1. **View order page:** A single page view of an order. You can use this [template](templates/order-detail.html) for this page.
+
+## HTML Templates
+
+We will provide a set of HTML pages with the front-end part of the exercice. Additionally, if you want a static server we already set it up for you as well.
+You just have to do the back-end part and replace the endpoints in the JS files with your own.
+Please read the [templates/README](templates/README) for more details.
 
 # License
 

@@ -46,30 +46,39 @@
     <!-- FORM PART -->
 
     <div class="container">
+
+        <!-- Notification Area -->
+
+        <div id="order-alert" class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Great!</h4>
+            <p>Your order was accepted successfully</p>
+        </div>
+
         <div class="jumbotron">
             <h2 class="text-center">Build your own pizza!</h2>
-            <form action="/order-pizza">
+            
+            <form id="order-form">
 
                 <!-- CLIENT DATA -->
 
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Name: </label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Name">
+                        <input required name="name" type="text" class="form-control" placeholder="Name">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Address: </label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Address">
+                        <input required name="address" type="text" class="form-control" placeholder="Address">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Phone #: </label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Phone">
+                        <input required name="phone" type="text" class="form-control" placeholder="Phone">
                     </div>
                 </div>
 
@@ -77,7 +86,7 @@
 
                 <!-- SIZE AND INGREDIENTS -->
 
-                <table class="table table-bordered">
+                <table class="table bg-white table-bordered">
                     <thead class="thead-dark">
                         <tr>
                             <th class="w-50">Choose a size</th>
@@ -88,59 +97,62 @@
                         <tr>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" checked>
+                                    <input value="Small" required name="size" class="form-check-input" type="radio">
                                     <label class="form-check-label" for="exampleRadios1">
-                                        Small - $8
+                                        Small - $5
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio">
+                                    <input value="Medium" required name="size" class="form-check-input" type="radio">
                                     <label class="form-check-label" for="exampleRadios2">
-                                        Medium - $9
+                                        Medium - $8
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio">
+                                    <input value="Large" required name="size" class="form-check-input" type="radio">
                                     <label class="form-check-label" for="exampleRadios3">
-                                        Large - $10
+                                        Large - $11
                                     </label>
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" checked>
+                                    <input name="ingredients" value="Extra cheese" class="form-check-input" type="checkbox">
                                     <label class="form-check-label" for="defaultCheck1">
+                                        Extra cheese - $1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input name="ingredients" value="Anchovies" class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        Anchovies - $2
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input name="ingredients" value="Pineapple" class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="defaultCheck2">
                                         Pineapple - $1
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" checked>
+                                    <input name="ingredients" value="Onions" class="form-check-input" type="checkbox">
                                     <label class="form-check-label" for="defaultCheck2">
-                                        Ham - $2
+                                        Onions - $1
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
+                                    <input name="ingredients" value="Caviar" class="form-check-input" type="checkbox">
                                     <label class="form-check-label" for="defaultCheck2">
-                                        Estra Cheese - $2
+                                        Caviar - $5
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
+                                    <input name="ingredients" value="Kobe Beef" class="form-check-input" type="checkbox">
                                     <label class="form-check-label" for="defaultCheck2">
-                                        Extra souce - $2
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label" for="defaultCheck2">
-                                        Extra dough - $2
+                                        Kobe Beef - $10
                                     </label>
                                 </div>
                             </td>
-                        </tr>
-                        <tr class="table-active">
-                            <th class="text-right" colspan="2">Total: $11</th>
                         </tr>
                     </tbody>
                 </table>
@@ -165,6 +177,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
