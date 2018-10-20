@@ -1,7 +1,6 @@
 /**
  * Set the id to query the order
  */
-let id = 1;
 
 /**
  * Fetchs de order detail and appends to the page.
@@ -11,12 +10,17 @@ let id = 1;
  * with your service endpoint below
  * ****************************
  */
-fetch(`json/order.json?id=${id}`)
-    .then(response => response.json())
-    .then(order => {
-        let template = createRowTemplate(order);
-        $("#order").append(template);
-    });
+
+(function(){
+    let urlParams = new URLSearchParams(window.location.search);
+    let customerId = urlParams.get('id');
+    fetch(`http://localhost:3000/api/create-orders/${customerId}`)
+        .then(response => response.json())
+        .then(order => {
+            let template = createRowTemplate(order);
+            $("#order").append(template);
+        });
+})();
 
 /**
  * Find the template tag and populate it with the data
