@@ -6,7 +6,7 @@
  * with your service endpoint below
  * ****************************
  */
-fetch('json/orders.json')
+fetch('http://localhost:3000/api/create-orders')
     .then(response => response.json())
     .then(orders => {
         let rows = orders.map(element => createOrderTemplate(element));

@@ -8,7 +8,7 @@
  * ****************************
  */
 function postOrder(order) {
-    fetch('/pizza', {
+    fetch('http://localhost:3000/api/create-orders', {
         method: 'POST',
         body: JSON.stringify(order),
         headers: {
